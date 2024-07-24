@@ -89,14 +89,20 @@ mkdir /test
 mount -t ceph ceph1,ceph3:/ /test -o name=user,secret=AQDHoaBmi9yMBRAAuonsvbr80o8HRzkkwuuRag==
 touch /test/test
 echo "This is a node 1">/test/test
-
+```
 
 Client2:
+```bash
 sudo -i
 mkdir /test
 mount -t ceph ceph1,ceph3:/ /test -o name=user,secret=AQDHoaBmi9yMBRAAuonsvbr80o8HRzkkwuuRag==
 echo "This is a node 2">>/test/test
+```
 
-
-проверить: 
+Проверить: 
+```bash
 cat /test/test
+```
+
+
+
