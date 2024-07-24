@@ -48,9 +48,6 @@ ceph osd pool autoscale-status
 >cephfs.volume1.meta  32768                 3.0        61428M  0.0000                                  4.0      32              off        False  
 >cephfs.volume1.data      0                 3.0        61428M  0.0000                                  1.0      32              off        True   
 
-
-
-
 В нашем примере он включен, и мы руками не задавали значение pg. Если же нужно изменить количество pg — так можно увеличить их на кластере. 
 ```bash
 ceph osd pool set cephfs.volume1.data pg_num 32
@@ -60,10 +57,6 @@ ceph osd pool set cephfs.volume1.data pgp_num 32
 ```bash 
 ceph osd pool set noautoscale
 ```
-
-
-
-
 #### Теперь стоит показать, что можно создавать второй рут CephFS. Нужно создать новый пул, создать новую fs с именем cephfs — и создастся новый рут. Сколько бы рутов ни было, mds будут использоваться те же самые, и они все работают в отказоустойчивом режиме.
 ```bash
 ceph osd pool create cephfs_data 32 32
