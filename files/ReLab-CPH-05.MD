@@ -13,7 +13,7 @@
 * Не выходя из gwcli, создайте клиента с уз (username=iscsiadmin password=iscsipassword) и дайте ему диск.
 * На клиенте поставьте ПО icsci. Настройте клиент на подключение.
 * Настройте мультипас драйвер. Правим /etc/multipath.conf
-```json
+```
     devices {
             device {
                         vendor                 "LIO-ORG"
@@ -131,7 +131,7 @@ apt install open-iscsi multipath-tools.
 ```bash
 nano /etc/multipath.conf
 ```
-```json
+```
 devices {
     device {
             vendor                 "LIO-ORG"
