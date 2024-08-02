@@ -13,13 +13,13 @@
 ## Практика:
 Напомним про расчет PG вручную. Для расчета общего количества PG используется следующая формула:
 
-Total PGs = (Total_number_of_OSD * 100) / max_replication_count
+> Total PGs = (Total_number_of_OSD * 100) / max_replication_count
 
 Мы берем количество дисков, умножаем на 100 (100%-е заполнение) и делим на максимальный фактор репликации. Получаем общее число placement групп. Дальше его делим на количество пулов и находим степень двойки, превосходящую полученное число. То есть, не может получиться 3001 плейсмент группа, мы приводим это число к ближайшей наибольшей степени двойки — в нашем случае 4096.
 
 ## Ответ:
 Калькулятор: https://docs.ceph.com/en/latest/rados/operations/pgcalc/#
-
+```bash
 ceph osd pool create rbd 2048
 ceph osd pool set rbd size 3
 while [ $(ceph -s | grep creating -c) -gt 0 ]; do echo -n .;sleep 1; done
@@ -27,5 +27,5 @@ while [ $(ceph -s | grep creating -c) -gt 0 ]; do echo -n .;sleep 1; done
 ceph osd pool create cephfs 2048
 ceph osd pool set cephfs size 3
 while [ $(ceph -s | grep creating -c) -gt 0 ]; do echo -n .;sleep 1; done
-
+```
 
