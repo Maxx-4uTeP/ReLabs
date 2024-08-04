@@ -60,7 +60,7 @@ radosgw-admin period update --rgw-realm=ceph.local --commit
 ```bash
 ceph orch apply rgw ceph --realm=ceph.local --zone=ceph.local --placement="2 ceph1 ceph2"
 ```
-#### Делаем пользователя бэкап:
+#### Делаем пользователя тест:
 ```bash
 radosgw-admin user create --display-name="test" --uid=test
 ```
