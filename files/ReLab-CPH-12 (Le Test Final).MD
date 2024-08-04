@@ -210,13 +210,13 @@ aws --profile=ceph --endpoint=http://ceph1 s3 ls backup
 
 
 #### Итоговая проверка:
-* Пауза с кластера убрана: **<span style="color:green">OK</span>**
-* Работы дисков: **<span style="color:green">OK</span>**
-* Проверка пула rgw: **<span style="color:green">OK</span>**
-* Проверка установки boto на клиенте: **<span style="color:green">OK</span>**
-* Проверка установки awscli на клиенте: **<span style="color:green">OK</span>**
-* Проверка наличия файла credentials на клиенте: **<span style="color:green">OK</span>**
-* Проверка наличия файла config с указанным output-типом json на клиенте: **<span style="color:green">OK</span>**
-* Проверка наличия файла test в bucket backup на клиенте: **<span style="color:green">OK</span>**
+* Пауза с кластера убрана: ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) __OK__
+* Работы дисков: ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) __OK__
+* Проверка пула rgw: ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) __OK__
+* Проверка установки boto на клиенте: ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) __OK__
+* Проверка установки awscli на клиенте: ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) __OK__
+* Проверка наличия файла credentials на клиенте: ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) __OK__
+* Проверка наличия файла config с указанным output-типом json на клиенте: ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) __OK__
+* Проверка наличия файла test в bucket backup на клиенте: ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) __OK__
 
 
