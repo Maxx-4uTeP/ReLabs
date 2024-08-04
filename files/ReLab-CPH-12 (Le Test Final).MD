@@ -26,17 +26,10 @@
     * Проверить настройки и доступ к гейтвею: если все работает, создать s3-бакет backup;
     * Создать файл test в s3-бакете backup.
 
-```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-```
 
 #### Первоначальная проверка:
-* Пауза с кластера убрана: ```diff - FAILED ```
-* Работы дисков: **<span style="color:red">FAILED</span>**
+* Пауза с кластера убрана: <span style="color:red">__FAILED__</span>
+* Работы дисков: <span style="color:red">FAILED</span>
 * Проверка пула rgw: **<span style="color:red">FAILED</span>**
 * Проверка установки boto на клиенте: **<span style="color:red">FAILED</span>**
 * Проверка установки awscli на клиенте: **<span style="color:red">FAILED</span>**
