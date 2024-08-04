@@ -26,6 +26,14 @@
     * Проверить настройки и доступ к гейтвею: если все работает, создать s3-бакет backup;
     * Создать файл test в s3-бакете backup.
 
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
+```
+
 #### Первоначальная проверка:
 * Пауза с кластера убрана: ```diff + FAILED```
 * Работы дисков: **<span style="color:red">FAILED</span>**

@@ -33,7 +33,7 @@ rbd snap create rbd/disk01@snap01 --name client.rbd
 ```bash
 rbd snap rollback rbd/disk01@snap01 --name client.rbd
 ```
-=======================================================
+---
 ### ОТВЕТ:
 #### На сервере:
 ```bash
