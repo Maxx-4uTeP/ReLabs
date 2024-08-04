@@ -27,23 +27,14 @@
     * Создать файл test в s3-бакете backup.
 
 #### Первоначальная проверка:
-* Пауза с кластера убрана: FAILED
-* Работы дисков: FAILED
-* Проверка пула rgw: FAILED
-* Проверка установки boto на клиенте: FAILED
-* Проверка установки awscli на клиенте: FAILED
-* Проверка наличия файла credentials на клиенте: FAILED
-* Проверка наличия файла config с указанным output-типом json на клиенте: FAILED
-* Проверка наличия файла test в bucket backup на клиенте: FAILED
-
-Смотрим на 4 ноде ip адрес и прописываем его в /etc/hosts
-
-        10.129.0.10 ceph1.local ceph1
-        10.129.0.18 ceph2.local ceph2
-        10.129.0.32 ceph3.local ceph3
-        10.129.0.12 ceph4.local ceph4
-
-Смотрим на 4 ноде ip адрес и прописываем его в /etc/hosts
+* Пауза с кластера убрана: <span style="color:red">**FAILED**</span>
+* Работы дисков: **<span style="color:red">FAILED</span>**
+* Проверка пула rgw: **<span style="color:red">FAILED</span>**
+* Проверка установки boto на клиенте: **<span style="color:red">FAILED</span>**
+* Проверка установки awscli на клиенте: **<span style="color:red">FAILED</span>**
+* Проверка наличия файла credentials на клиенте: **<span style="color:red">FAILED</span>**
+* Проверка наличия файла config с указанным output-типом json на клиенте: **<span style="color:red">FAILED</span>**
+* Проверка наличия файла test в bucket backup на клиенте: **<span style="color:red">FAILED</span>**
 
         10.129.0.28 ceph1.local ceph1
         10.129.0.25 ceph2.local ceph2
@@ -218,13 +209,13 @@ aws --profile=ceph --endpoint=http://ceph1 s3 ls backup
 
 
 #### Итоговая проверка:
-* Пауза с кластера убрана: OK
-* Работы дисков: OK
-* Проверка пула rgw: OK
-* Проверка установки boto на клиенте: OK
-* Проверка установки awscli на клиенте: OK
-* Проверка наличия файла credentials на клиенте: OK
-* Проверка наличия файла config с указанным output-типом json на клиенте: OK
-* Проверка наличия файла test в bucket backup на клиенте: OK
+* Пауза с кластера убрана: **<span style="color:green">OK</span>**
+* Работы дисков: **<span style="color:green">OK</span>**
+* Проверка пула rgw: **<span style="color:green">OK</span>**
+* Проверка установки boto на клиенте: **<span style="color:green">OK</span>**
+* Проверка установки awscli на клиенте: **<span style="color:green">OK</span>**
+* Проверка наличия файла credentials на клиенте: **<span style="color:green">OK</span>**
+* Проверка наличия файла config с указанным output-типом json на клиенте: **<span style="color:green">OK</span>**
+* Проверка наличия файла test в bucket backup на клиенте: **<span style="color:green">OK</span>**
 
 
