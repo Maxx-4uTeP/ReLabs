@@ -171,7 +171,6 @@ radosgw-admin user create --display-name="test" --uid=test
 #### Командой podman ps смотрим, что rgw ceph развернулся.
 #### Далее переходим на клиента. Здесь через pip ставим awscli (работать будем по протоколу s3):
 ```bash
-ssh client
 apt-get update
 apt-get install python3-pip -y
 pip3 install awscli boto boto3
