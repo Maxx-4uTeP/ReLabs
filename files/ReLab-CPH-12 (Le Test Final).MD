@@ -26,21 +26,16 @@
     * Проверить настройки и доступ к гейтвею: если все работает, создать s3-бакет backup;
     * Создать файл test в s3-бакете backup.
 
-<style>
-r { color: Red }
-o { color: Orange }
-g { color: Green }
-</style>
 
 #### Первоначальная проверка:
-* Пауза с кластера убрана: <r>__FAILED__</r>
-* Работы дисков: <span style="color:red">FAILED</span>
-* Проверка пула rgw: **<span style="color:red">FAILED</span>**
-* Проверка установки boto на клиенте: **<span style="color:red">FAILED</span>**
-* Проверка установки awscli на клиенте: **<span style="color:red">FAILED</span>**
-* Проверка наличия файла credentials на клиенте: **<span style="color:red">FAILED</span>**
-* Проверка наличия файла config с указанным output-типом json на клиенте: **<span style="color:red">FAILED</span>**
-* Проверка наличия файла test в bucket backup на клиенте: **<span style="color:red">FAILED</span>**
+* Пауза с кластера убрана: ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) __FAILED__
+* Работы дисков: ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) __FAILED__
+* Проверка пула rgw: ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) __FAILED__
+* Проверка установки boto на клиенте: ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) __FAILED__
+* Проверка установки awscli на клиенте: ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) __FAILED__
+* Проверка наличия файла credentials на клиенте: ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) __FAILED__
+* Проверка наличия файла config с указанным output-типом json на клиенте: ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) __FAILED__
+* Проверка наличия файла test в bucket backup на клиенте: ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) __FAILED__
 
         10.129.0.28 ceph1.local ceph1
         10.129.0.25 ceph2.local ceph2
