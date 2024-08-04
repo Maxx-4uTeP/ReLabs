@@ -36,12 +36,20 @@
 * Проверка наличия файла config с указанным output-типом json на клиенте: FAILED
 * Проверка наличия файла test в bucket backup на клиенте: FAILED
 
+Смотрим на 4 ноде ip адрес и прописываем его в /etc/hosts
 
-  > 10.129.0.28 ceph1.local ceph1
-  10.129.0.25 ceph2.local ceph2
-  10.129.0.27 ceph3.local ceph3
-  10.129.0.9 client.local client
-  10.129.0.31 ceph4.local ceph4
+        10.129.0.10 ceph1.local ceph1
+        10.129.0.18 ceph2.local ceph2
+        10.129.0.32 ceph3.local ceph3
+        10.129.0.12 ceph4.local ceph4
+
+Смотрим на 4 ноде ip адрес и прописываем его в /etc/hosts
+
+        10.129.0.28 ceph1.local ceph1
+        10.129.0.25 ceph2.local ceph2
+        10.129.0.27 ceph3.local ceph3
+        10.129.0.9 client.local client
+        10.129.0.31 ceph4.local ceph4
 
 
 #### Поднимаем стенд, смотрим статус:
