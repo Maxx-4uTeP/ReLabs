@@ -27,7 +27,7 @@
     * Создать файл test в s3-бакете backup.
 
 #### Первоначальная проверка:
-* Пауза с кластера убрана: ```diff+ FAILED```
+* Пауза с кластера убрана: ```diff + FAILED```
 * Работы дисков: **<span style="color:red">FAILED</span>**
 * Проверка пула rgw: **<span style="color:red">FAILED</span>**
 * Проверка установки boto на клиенте: **<span style="color:red">FAILED</span>**
