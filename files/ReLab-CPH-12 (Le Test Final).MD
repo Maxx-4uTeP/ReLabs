@@ -26,9 +26,14 @@
     * Проверить настройки и доступ к гейтвею: если все работает, создать s3-бакет backup;
     * Создать файл test в s3-бакете backup.
 
+<style>
+r { color: Red }
+o { color: Orange }
+g { color: Green }
+</style>
 
 #### Первоначальная проверка:
-* Пауза с кластера убрана: <span style="color:red">__FAILED__</span>
+* Пауза с кластера убрана: <r>__FAILED__</r>
 * Работы дисков: <span style="color:red">FAILED</span>
 * Проверка пула rgw: **<span style="color:red">FAILED</span>**
 * Проверка установки boto на клиенте: **<span style="color:red">FAILED</span>**
