@@ -11,3 +11,4 @@
 ##### [CPH 09: Производительность Ceph](./files/ReLab-CPH-09.MD)
 ##### [CPH 10: Интеграция с Kubernetes и мониторинг Ceph](./files/ReLab-CPH-10.MD)
 ##### [CPH 11: Резервное копирование и логирование Ceph](./files/ReLab-CPH-11.MD)
+##### [CPH 12: Финальное задание Ceph](./files/ReLab-CPH-12 (Le Test Final).MD)
